@@ -1,6 +1,0 @@
-[submodule "bundle/python-mode"]
-	path = bundle/python-mode
-	url = git://github.com/klen/python-mode.git
-[submodule "bundle/neobundle.vim"]
-	path = bundle/neobundle.vim
-	url = https://github.com/Shougo/neobundle.vim

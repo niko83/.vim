@@ -1,6 +1,0 @@
-solution x = x
-
-main = do
-    let input = []
-    in
-        print $ solution input

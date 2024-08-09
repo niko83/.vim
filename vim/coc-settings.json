@@ -1,0 +1,104 @@
+{
+    // "coc.preferences.colorSupport": true,
+    // "coc.preferences.formatOnSaveFiletypes": ["rust", "Markdown", "java", "sh", "js", "ts", "css"],
+    // "coc.preferences.useQuickfixForLocations": true,
+    "coc.preferences.rootPatterns": [ ".git" ],
+    // "coc.source.file.priority": 60,
+    // "coc.source.buffer.priority": 50,
+
+
+    "suggest.enablePreview": true,
+    //"suggest.autoTrigger":  "trigger",
+    "suggest.minTriggerInputLength": 3,
+    "suggest.triggerCompletionWait": 30,
+
+    // "suggest.removeDuplicateItems": true,
+    // "suggest.preferCompleteThanJumpPlaceholder": true,
+    "suggest.defaultSortMethod": "alphabetical",
+    "suggest.detailField": "menu",
+    "suggest.enablePreselect": true,
+    "suggest.noselect": false,
+
+    // "python.analysis.diagnosticMode": "openFilesOnly",
+    "pyright.organizeimports.provider": "ruff",
+    "python.analysis.typeCheckingMode": "off",
+
+
+    // "python.formatting.provider": "ruff",
+    // "python.formatting.blackArgs": ["--line-length", "119"],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--config=/home/niko/projects/paltabrain-payments/setup.cfg",
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.banditEnabled": true,
+    "python.linting.banditArgs": ["-s", "B101,B311,B303"],
+    "python.linting.pytypeEnabled": true,
+    "python.linting.pytypeArgs": ["-p", "."],
+
+    "diagnostic.enable": true,
+    "diagnostic.warningSign": "WW",
+    "diagnostic.errorSign": "EE",
+    "diagnostic.infoSign": "II",
+    "diagnostic.hintSign": "HH",
+
+    "diagnostic.checkCurrentLine": true,
+    "diagnostic.level": "information",
+    "diagnostic.enableMessage": "jump",
+
+    // // "python.linting.pycodestyleEnabled": true,
+    // // "python.linting.prospectorEnabled": true,
+    // // "python.linting.pydocstyleEnabled": true,
+    // // "python.linting.pylamaEnabled": true,
+    // "python.linting.pylintEnabled": true,
+
+    // "typescript.autoClosingTags": true,
+    // "javascript.autoClosingTags": true,
+
+    // "eslint.packageManager": "yarn",
+    // "eslint.autoFixOnSave": true,
+    // "eslint.format.enable": true,
+
+    // "list.source.files.command": "ag",
+    // "list.source.files.args": ["--nocolor", "-l"],
+    // "list.source.files.excludePatterns": [
+    //     "**/.git/**", "**/env/**", "**/node_modules/**", "**/.tox/**"],
+
+    // "snippets.priority": 1,
+    // "snippets.autoTrigger": true,
+    // "snippets.ultisnips.enable": true,
+    // "snippets.ultisnips.usePythonx": true,
+    // "snippets.ultisnips.directories": ["UltiSnips"],
+    "languageserver": {
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+            "filetypes": ["go"],
+            "initializationOptions": {
+                "usePlaceholders": true
+            }
+        },
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+                "cpp",
+                "objc",
+                "objcpp"
+            ],
+            "rootPatterns": [
+                ".ccls",
+                "compile_commands.json",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
+        }
+    },
+    "x": "x"
+}
